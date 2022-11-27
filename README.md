@@ -1,2 +1,2 @@
 # snakegamea
-https://yebyungmun.github.io/snakegamea/
+<a href="https://yebyungmun.github.io/snakegamea/">snake Game</a>
