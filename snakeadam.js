@@ -84,7 +84,6 @@ function drawGame() {
 }
 
 
-
 // 게임 종료 함수
 function isGameOver(){
   let gameOver = false;  // 디폴트를 게임종료(멈춤=false)로 하고
@@ -174,7 +173,6 @@ function drawSnake(){
 
   }
 
-
   /*
   trail(snakeParts) 배열에 headX, headY의 위치를 객체 형태로 저장하는 원소들을 채워넣도록 하겠습니다. 
   단, tailLength 만큼의 원소를 저장하며, trail 배열의 길이가 tailLength를 초과하면 shift()를 
@@ -224,7 +222,6 @@ function drawSnake(){
 
   }
 }
-
 
 
 // 뱀의 위치를 변경하기 위한 함수
@@ -293,7 +290,6 @@ function keyDown(event){
   }
 }
 
-
 let click = document.getElementById("btn1");
     click.onclick = function(){
       
@@ -330,6 +326,5 @@ let click4 = document.getElementById("btn4");
         xVelocity = 0;   // 타일 한칸 왼쪽으로 이동
       
     }
-
 
 drawGame();

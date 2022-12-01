@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Snake Game</title>
   <style>
-    /*게임판을 중앙에 놓기(크기를 변경해도 중앙에 위치) 
+    /*게임판을 중앙에 놓기(크기를 변경해도 중앙에 위치) -*/
     #game {
       position: absolute;
       top: 50%;
@@ -14,7 +14,6 @@
       transform: translate(-50%, -50%);
 
     }
-    */
     canvas{
       box-shadow: black 20px 10px 50px;
     }
@@ -50,15 +49,21 @@
   </style>
 </head>
 <body>
-
+  <h1>Snake Game</h1>
+  <p><a href="https://www.youtube.com/watch?v=7Azlj0f9vas&t=387s">Site</a></p>
+  <p><a href="https://www.section.io/engineering-education/how-to-build-a-snake-game-with-javascript/">코딩 설명</a></p>
+  <p><a href="https://yjyoon-dev.github.io/project/2020/11/13/jsgame-snake/">코딩 설명2</a></p>
+  <p>Coding Snake in JavaScript Complete Tutorial Every Step Explained with HTML5 Canvas</p>
+  <p>새로운 게임</p>
+  <p>Press Spacebar</p>
   <form><input type="button" value="New Game" onClick="window.location.reload()"></form>
-  <button id="btn1">left</button>
-  <button id="btn2">right</button>
-  <button id="btn3">up</button>
-  <button id="btn4">down</button><br>
-  <br>
   
-  <!-- <div class='circleBase' id='rotateMode'>
+  <!-- <button id="btn1">left</button><br>
+  <button id="btn2">right</button><br>
+  <button id="btn3">up</button><br>
+  <button id="btn4">down</button><br> -->
+  <br>
+  <div class='circleBase' id='rotateMode'>
     <div class="top">
       <button id="btn3">UP</button>
     </div>
@@ -71,9 +76,9 @@
     <div class="bottom">
       <button id="btn4">DOWN</button>
     </div>
-  </div> -->
+  </div>
 
-  <canvas id="game" width="300" height="400"></canvas>
+  <canvas id="game" width="400" height="600"></canvas>
   <script src="snakeadam.js"></script>
 </body>
 </html>
