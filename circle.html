@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #rotateMode {
+      border-radius: 50%;
+      width: 125px;
+      height: 125px;
+      background-color: gray;
+      color: white;
+      position: absolute;
+      /* USE FLEXBOX */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    
+    .top,
+    .middle,
+    .bottom {
+      display: flex;
+      flex-direction: row;
+    }
+    
+    .top,
+    .bottom {
+      justify-content: center;
+    }
+    
+    .middle {
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+  <div class='circleBase' id='rotateMode'>
+    <div class="top">
+      <button id="up" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-up"></span></button>
+    </div>
+  
+    <div class="middle">
+      <button id="left" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-left"></span></button>
+      <button id="right" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right"></span></button>
+    </div>
+  
+    <div class="bottom">
+      <button id="down" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-down"></span></button>
+    </div>
+  </div>
+</body>
+</html>
