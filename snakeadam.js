@@ -349,10 +349,10 @@ let click4 = document.getElementById("btn4");
         xVelocity = 1;   // 타일 한칸 오른쪽으로 이동
       } else if(startingY-100 < movingX){
         //console.log('left');
-        if(xVelocity == -1)
+        if(xVelocity == 1)
           return;
         yVelocity = 0;
-        xVelocity = 1;   // 타일 한칸 왼쪽으로 이동
+        xVelocity = -1;   // 타일 한칸 왼쪽으로 이동
       }
       if(startingY+100 < movingY){
         //console.log('down');
