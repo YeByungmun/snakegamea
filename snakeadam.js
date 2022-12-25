@@ -342,7 +342,8 @@ let click4 = document.getElementById("btn4");
     }
     function touchend(){
       if(startingX+100 < movingX){
-        console.log('right');
+        //console.log('right');
+        alert('right');
       } else if(startingY-100 < movingX){
         console.log('left');
       }
