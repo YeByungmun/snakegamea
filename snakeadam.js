@@ -343,19 +343,30 @@ let click4 = document.getElementById("btn4");
     function touchend(){
       if(startingX+100 < movingX){
         //console.log('right');
-        alert('right');
+        if(xVelocity == -1)
+          return;
+        yVelocity = 0;
+        xVelocity = 1;   // 타일 한칸 오른쪽으로 이동
       } else if(startingY-100 < movingX){
-        console.log('left');
+        //console.log('left');
+        if(xVelocity == -1)
+          return;
+        yVelocity = 0;
+        xVelocity = 1;   // 타일 한칸 왼쪽으로 이동
       }
       if(startingY+100 < movingY){
-        console.log('down');
+        //console.log('down');
+        if(yVelocity == -1)
+          return;
+        yVelocity = 1;  // 타일 한칸 아래로 이동
+        xVelocity = 0;
       } else if(startingY-100 < movingY){
         //console.log('up');
         //alert('up');
-        if(yVelocity == -1)
-          return;
-        yVelocity = 1;
-        xVelocity = 0;   
+        if(yVelocity == 1)
+        return;
+        yVelocity = -1;  // 타일 한칸 위로 이동
+        xVelocity = 0; 
         }
       }
 
