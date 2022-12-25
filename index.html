@@ -48,7 +48,9 @@
     }
   </style>
 </head>
-<body>
+<body ontouchstart="touchstart(event)"
+  ontouchmove="touchmove(event)"
+  ontouchend="touchend()">
   <h1>Snake Game</h1>
   <p><a href="https://www.youtube.com/watch?v=7Azlj0f9vas&t=387s">Site</a></p>
   <p><a href="https://www.section.io/engineering-education/how-to-build-a-snake-game-with-javascript/">코딩 설명</a></p>
@@ -79,6 +81,33 @@
   </div>
 
   <canvas id="game" width="400" height="600"></canvas>
-  <script src="snakeadam.js"></script>
+  //<script src="snakeadam.js"></script>
+  <script>
+  
+
+    var startingX, startingY, movingX
+    function touchstart(evt){
+      startingX = evt.touches[0].clientX;
+      startingY = evt.touches[0].clientY;
+    }
+    function touchmove(evt){
+      movingX = evt.touches[0].clientX;
+      movingY = evt.touches[0].clientY;
+    }
+    function touchend(){
+      if(startingX+100 < movingX){
+        console.log('right');
+      } else if(startingY-100 < movingX){
+        console.log('left');
+      }
+      if(startingY+100 < movingY){
+        console.log('down');
+      } else if(startingY-100 < movingY){
+        //console.log('up');
+        alert('up');
+        }
+      }
+
+  </script>
 </body>
 </html>
