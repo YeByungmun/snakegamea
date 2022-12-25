@@ -81,33 +81,7 @@
   </div>
 
   <canvas id="game" width="400" height="600"></canvas>
-  //<script src="snakeadam.js"></script>
-  <script>
+  <script src="snakeadam.js"></script>
   
-
-    var startingX, startingY, movingX
-    function touchstart(evt){
-      startingX = evt.touches[0].clientX;
-      startingY = evt.touches[0].clientY;
-    }
-    function touchmove(evt){
-      movingX = evt.touches[0].clientX;
-      movingY = evt.touches[0].clientY;
-    }
-    function touchend(){
-      if(startingX+100 < movingX){
-        console.log('right');
-      } else if(startingY-100 < movingX){
-        console.log('left');
-      }
-      if(startingY+100 < movingY){
-        console.log('down');
-      } else if(startingY-100 < movingY){
-        //console.log('up');
-        alert('up');
-        }
-      }
-
-  </script>
 </body>
 </html>
