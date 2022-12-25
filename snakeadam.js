@@ -330,4 +330,33 @@ let click4 = document.getElementById("btn4");
       
     }
 
+
+    var startingX, startingY, movingX
+    function touchstart(evt){
+      startingX = evt.touches[0].clientX;
+      startingY = evt.touches[0].clientY;
+    }
+    function touchmove(evt){
+      movingX = evt.touches[0].clientX;
+      movingY = evt.touches[0].clientY;
+    }
+    function touchend(){
+      if(startingX+100 < movingX){
+        console.log('right');
+      } else if(startingY-100 < movingX){
+        console.log('left');
+      }
+      if(startingY+100 < movingY){
+        console.log('down');
+      } else if(startingY-100 < movingY){
+        //console.log('up');
+        //alert('up');
+        if(yVelocity == -1)
+          return;
+        yVelocity = 1;
+        xVelocity = 0;   
+        }
+      }
+
+
 drawGame();
