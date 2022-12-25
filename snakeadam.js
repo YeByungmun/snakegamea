@@ -80,6 +80,9 @@ function drawGame() {
   if (score > 8){
     speed = 11;
   }
+  if (score > 12){
+    speed = 14;
+  }
   setTimeout(drawGame, 1000 / speed);  // 초당 speed 번 스크린 업데이트
 }
 
